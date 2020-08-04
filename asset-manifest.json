@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/gh-pages-react-app/static/css/main.5f361e03.chunk.css",
-    "main.js": "/gh-pages-react-app/static/js/main.a35065a3.chunk.js",
-    "main.js.map": "/gh-pages-react-app/static/js/main.a35065a3.chunk.js.map",
-    "runtime-main.js": "/gh-pages-react-app/static/js/runtime-main.f6c43bb0.js",
-    "runtime-main.js.map": "/gh-pages-react-app/static/js/runtime-main.f6c43bb0.js.map",
-    "static/js/2.a6a921dc.chunk.js": "/gh-pages-react-app/static/js/2.a6a921dc.chunk.js",
-    "static/js/2.a6a921dc.chunk.js.map": "/gh-pages-react-app/static/js/2.a6a921dc.chunk.js.map",
+    "main.css": "/gh-pages-react-app/static/css/main.138f0978.chunk.css",
+    "main.js": "/gh-pages-react-app/static/js/main.68dfb5c9.chunk.js",
+    "main.js.map": "/gh-pages-react-app/static/js/main.68dfb5c9.chunk.js.map",
+    "runtime-main.js": "/gh-pages-react-app/static/js/runtime-main.dd6c03fa.js",
+    "runtime-main.js.map": "/gh-pages-react-app/static/js/runtime-main.dd6c03fa.js.map",
+    "static/css/2.b0d70484.chunk.css": "/gh-pages-react-app/static/css/2.b0d70484.chunk.css",
+    "static/js/2.0d847c49.chunk.js": "/gh-pages-react-app/static/js/2.0d847c49.chunk.js",
+    "static/js/2.0d847c49.chunk.js.map": "/gh-pages-react-app/static/js/2.0d847c49.chunk.js.map",
     "index.html": "/gh-pages-react-app/index.html",
-    "precache-manifest.58ca9209e0e7d1af15e2ac03206a488b.js": "/gh-pages-react-app/precache-manifest.58ca9209e0e7d1af15e2ac03206a488b.js",
+    "precache-manifest.c416b0798a4f397adfa60ba0f6b7c6be.js": "/gh-pages-react-app/precache-manifest.c416b0798a4f397adfa60ba0f6b7c6be.js",
     "service-worker.js": "/gh-pages-react-app/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/gh-pages-react-app/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.a6a921dc.chunk.js.LICENSE.txt": "/gh-pages-react-app/static/js/2.a6a921dc.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/gh-pages-react-app/static/media/logo.5d5d9eef.svg"
+    "static/css/2.b0d70484.chunk.css.map": "/gh-pages-react-app/static/css/2.b0d70484.chunk.css.map",
+    "static/css/main.138f0978.chunk.css.map": "/gh-pages-react-app/static/css/main.138f0978.chunk.css.map",
+    "static/js/2.0d847c49.chunk.js.LICENSE.txt": "/gh-pages-react-app/static/js/2.0d847c49.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/gh-pages-react-app/static/media/bg4.5fec188e.jpg",
+    "static/media/icon3.jpg": "/gh-pages-react-app/static/media/icon3.dd91a820.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f6c43bb0.js",
-    "static/js/2.a6a921dc.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.a35065a3.chunk.js"
+    "static/js/runtime-main.dd6c03fa.js",
+    "static/css/2.b0d70484.chunk.css",
+    "static/js/2.0d847c49.chunk.js",
+    "static/css/main.138f0978.chunk.css",
+    "static/js/main.68dfb5c9.chunk.js"
   ]
 }
