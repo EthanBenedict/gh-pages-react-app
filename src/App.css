@@ -1,38 +1,208 @@
-.App {
+.App{
+background-color: #9ca89f;
+}
+
+.App .copyright{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #9ca89f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* * { border: 1px solid red; } */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+
+  color:black;
+  background-color: transparent;
+}
+.navbar ul{
+  list-style: none;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item{
+ color: black;
+ font-size: 1.5em;
+ padding-right: 20px;
+ display: inline;
+}
+
+.nav-item > .active {
+  border-bottom: 1px solid #333;
+}
+
+.name{
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.name img{
+  padding-right: 10px;
+}
+
+.main{
+  height: 100vh;
+  background: url(./components/bg4.jpg), rgb(0, 0, 0);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 100px;
+
+}
+
+h3 { 
+  position: absolute; 
+  top: 500px; 
+  left: 10px; 
+  width: 100%; 
+  text-align: left;
+
+}
+
+h3 span { 
+  color: rgb(255, 109, 42); 
+  font: bold 24px/45px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0); /* transparent background - adjust last number*/
+  padding: 20px; 
+}
+
+h3 span.spacer {
+  padding:0 5px;
+}
+
+h4{
+  position: absolute;
+  top: 610px;
+  width: 100%;
+  text-align: right;
+}
+
+h4 span { 
+  color: rgb(255, 109, 42); 
+  font: bold 20px/25px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0); /* transparent background - adjust last number*/
+  padding: 20px; 
+}
+
+.about{
+  height: 100vh;
+  background-color: #9ca89f;
+  padding-left: 20px;
+  
+}
+.about h1{
+  font-size: 35pt;
+}
+
+.bio{
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+ 
+}
+.bio .p1{
+  width: 75%;
+  font-size: 15pt;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+.bio img{
+  border-radius: 100%;
+  padding: 30px;
+}
+
+.bio .p2{
+  font-size: 12pt;
+  letter-spacing: 1.5px;
+  
+}
+.experience{
+  height: 90vh;
+  background-color: #9ca89f;
+  
+}
+.experience h1{
+  padding-left: 20px;
+  font-size: 35pt;
+
+}
+
+
+.slider{
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(255, 109, 42);
+  
+}
+
+.slider .title{
+  text-align: left;
+  padding-left: 100px;
+  font-size: 25pt;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.slider .date{
+  text-align: left;
+  padding-left: 100px;
+  font-size: 20pt;
+}
+
+.slider .body{
+  text-align: left;
+  padding-left: 100px;
+  font-size: 15pt;
+  width: 75%;
+  line-height: 1.5em;
+  padding-top: 20px;
+}
+
+.experience h2{
+  font-size: 30pt;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.contact{
+  height: 90vh;
+  background-color: #9ca89f;
+}
+
+.contact h1{
+  padding-left: 20px;
+}
+.contact p{
+  text-align: center;
+  padding: 15px;
+  font-size: 25pt;
+  font-weight: bolder;
+  line-height:40px;
+  letter-spacing: 5px;
+  color: rgb(255, 109, 42);
+}
+
+.logos{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.logos img{
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footer .content p {
+  margin-bottom: 0
 }
