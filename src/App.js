@@ -4,7 +4,6 @@ import './App.css';
 import Navbar from "./components/Navbar.js";
 import About from "./components/About.js";
 import Main from "./components/Main.js";
-import Contact from "./components/Contact";
 import Experience from "./components/Experience"
 
 function App() {

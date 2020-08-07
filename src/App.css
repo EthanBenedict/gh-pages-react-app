@@ -110,7 +110,7 @@ h4 span {
   
  
 }
-.bio .p1{
+.bio ul{
   width: 75%;
   font-size: 15pt;
   letter-spacing: 2px;
@@ -138,35 +138,73 @@ h4 span {
 
 }
 
+.accordion {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background-color:rgb(255, 109, 42) ;
+}
 
-.slider{
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: rgb(255, 109, 42);
+.accordion__item + .accordion__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   
 }
 
-.slider .title{
+.accordion__button {
+  background-color: tan;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
   text-align: left;
-  padding-left: 100px;
-  font-size: 25pt;
-  font-weight: bold;
-  padding-top: 100px;
-}
-.slider .date{
-  text-align: left;
-  padding-left: 100px;
-  font-size: 20pt;
+  border: none;
+  font-size: 15pt;
 }
 
-.slider .body{
-  text-align: left;
-  padding-left: 100px;
-  font-size: 15pt;
-  width: 75%;
-  line-height: 1.5em;
-  padding-top: 20px;
+.accordion__button:hover {
+  background-color: rgb(255, 109, 42);
+}
+
+.accordion__button:before {
+  display: inline-block;
+  content: '';
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+  transform: rotate(45deg);
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  padding: 20px;
+  animation: fadein 0.35s ease-in;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+h5{
+  font-size: 12pt;
 }
 
 .experience h2{
@@ -203,6 +241,91 @@ h4 span {
   padding: 20px;
 }
 
+.connectMobile{
+  display: none;
+}
+
 #footer .content p {
   margin-bottom: 0
+}
+
+/* ------------------ Start Mobile CSS ----------------------- */
+
+@media (max-width: 650px){
+  .main{
+    background-image: url(./mobilebg.jpg);
+    background-position-x: left;
+    background-position-y: bottom;
+    margin-bottom: 100px;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+  
+    color:black;
+    background-color: tan;
+  }
+  .name{
+    display: none;
+  }
+  .name img{
+    padding-right: 10px;
+    display: none;
+  }
+
+  h3 { 
+    position: absolute; 
+    top: 50%; 
+    left: 10px; 
+    width: 100%; 
+    text-align: left;
+    
+  }
+  
+  h3 span { 
+    color: rgb(255, 109, 42); 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.3); /* transparent background - adjust last number*/
+    padding: 0; 
+    
+  }
+  
+  h3 span.spacer {
+    padding:0;
+  }
+  
+  h4{
+    display: none;
+  }
+  
+  h4 span { 
+    color: rgb(255, 109, 42); 
+    font: bold 20px/25px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0); /* transparent background - adjust last number*/
+    padding: 20px; 
+  }
+  
+  .about{
+    height: auto;
+    background-color: #9ca89f;
+    padding-left: 20px;
+  }
+
+  .experience{
+    height: auto;
+  }
+  .connectMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
 }
